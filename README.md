@@ -1,4 +1,4 @@
-# tralllocator
+# Trallocator
 [![crates.io](https://img.shields.io/crates/v/trallocator)](https://crates.io/crates/trallocator) [![documentation](https://docs.rs/trallocator/badge.svg)](https://docs.rs/trallocator)
 
 
@@ -11,8 +11,8 @@ Simply wrap an existing allocator with a `Trallocator`.
 ### Examples
 With another allocator, here we use the system one
 ``` rust
-# extern crate alloc;
-# extern crate std;
+extern crate alloc;
+extern crate std;
 use alloc::vec::Vec;
 use std::alloc::System;
 
@@ -31,8 +31,8 @@ fn main() {
 With the [allocator API](https://github.com/rust-lang/rust/issues/32838)
 ``` rust
 #![feature(allocator_api)]
-# extern crate alloc;
-# extern crate std;
+extern crate alloc;
+extern crate std;
 use alloc::vec::Vec;
 use std::alloc::System;
 
