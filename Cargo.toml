@@ -10,7 +10,7 @@ description = "A no_std lbrary for wrapping an existing allocator and tracking t
 documentation = "https://docs.rs/trallocator"
 readme = "README.md"
 keywords = ["allocator", "heap", "no-std"]
-categories = ["embedded", "allocator", "no-std"]
+categories = ["embedded", "no-std"]
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [features]
