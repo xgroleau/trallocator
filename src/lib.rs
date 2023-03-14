@@ -107,6 +107,7 @@ mod test {
     use crate::Trallocator;
 
     #[test]
+    #[cfg(all(feature = "allocator-api", feature = "max-usage"))]
     pub fn trace_alloc() {
         let tralloc: Trallocator<System> = Trallocator::new(System);
         assert_eq!(tralloc.usage(), 0);
