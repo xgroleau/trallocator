@@ -82,7 +82,7 @@ jobs:
         uses: Swatinem/rust-cache@v2
 
       - name: Run tests
-        run: cargo test --all-featres
+        run: cargo test --all-features
 
   MSRV:
     runs-on: ubuntu-latest
