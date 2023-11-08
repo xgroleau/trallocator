@@ -36,10 +36,11 @@ impl<A> Trallocator<A> {
         self.max_usage.load(Ordering::Relaxed)
     }
 
-    /// Clear the max usage, can be used to track max usage per time frame.
+    /// Clear the max usage and set it to the current usage.
+    /// Can be used to track max usage per time frame.
     #[cfg(feature = "max-usage")]
     pub fn clear_max_usage(&self) {
-        self.max_usage.store(0, Ordering::Relaxed);
+        self.max_usage = self.usage;
     }
 
     /// Borrow the inner allocator.
