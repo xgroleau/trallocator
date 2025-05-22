@@ -17,3 +17,5 @@ categories = ["embedded", "no-std"]
 allocator-api = []
 max-usage = []
 
+[package.metadata.docs.rs]
+all-features = true

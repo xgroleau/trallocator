@@ -2,6 +2,7 @@
 #![no_std]
 #![deny(missing_docs)]
 #![cfg_attr(feature = "allocator-api", feature(allocator_api))]
+#![cfg_attr(docsrs, feature(doc_auto_cfg))]
 
 use core::alloc::{GlobalAlloc, Layout};
 use core::sync::atomic::{AtomicUsize, Ordering};
