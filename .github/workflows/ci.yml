@@ -64,7 +64,9 @@ jobs:
         uses: Swatinem/rust-cache@v2
 
       - name: Create doc
-        run: cargo doc
+        run: cargo doc --all-features
+        env:
+          RUSTDOCFLAGS: --cfg docsrs # mimic docs.rs build
 
   Tests:
     runs-on: ubuntu-latest
